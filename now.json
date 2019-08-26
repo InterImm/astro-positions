@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "astropositionapi",
+    "builds": [
+        { "src": "*.py", "use": "@now/python" , "config": { "maxLambdaSize": "50mb" } }
+    ],
+    "routes": [
+        { "src": "/now", "dest": "/now.py" }
+    ],
+    "alias": ["astropositionapi.now.sh", "astropositionapi.interimm.org"],
+    "github": {
+        "silent": true
+      }
+}
